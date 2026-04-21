@@ -7,6 +7,8 @@ description: Wrap up session by updating docs, capturing learnings, and proposin
 
 Use this skill when wrapping up a coding session. It ensures learnings are documented and next work is clear.
 
+Steps 1 and 2 are conditional: skip them if the session didn't produce anything worth capturing, or if the target file doesn't exist and creating one isn't warranted. Don't manufacture content to fill a section — say "nothing to add" and move on. Step 3 always applies.
+
 ## Step 1: Update CLAUDE.md with Session Learnings
 
 Review what changed in the codebase during this session and add any new architectural insights, gotchas, or patterns to CLAUDE.md.
