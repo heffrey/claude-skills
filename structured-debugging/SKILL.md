@@ -19,6 +19,8 @@ Find the shortest sequence of actions that reliably reproduces the bug. If you c
 
 **Artifact:** a command, test case, or sequence of steps that triggers the bug 100% of the time. Write it down.
 
+**If the bug is a failing test:** run it in isolation first (e.g., `jest --testPathPattern=foo --runInBand`). If it passes alone but fails in the full suite, the bug is shared mutable state — not a logic error or race condition in the code under test. That changes the entire investigation.
+
 **If the bug is intermittent:** reproduce with logging turned up, and treat capturing a single clean instance (with logs) as the success criterion for this step.
 
 ### 2. Isolate
