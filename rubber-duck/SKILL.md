@@ -1,9 +1,11 @@
 ---
 name: rubber-duck
-description: Use when stuck on a problem, before making non-trivial changes, or when a plan feels hand-wavy - forces you to explain the problem, system, and assumptions in prose before proposing any solution
+description: Use when stuck on a problem, about to make a non-trivial change, or noticing you're about to guess instead of reason
 ---
 
 # Rubber Duck
+
+**Rigid.** Do not skip sections; do not propose a solution until the written explanation is complete.
 
 The act of explaining a problem aloud often surfaces the answer. Use this skill as a gate: you cannot propose a solution until you've written the explanation.
 

@@ -1,13 +1,17 @@
 ---
 name: end-session
-description: Wrap up session by updating docs, capturing learnings, and proposing next work
+description: Use when wrapping up a coding session, closing out work, or about to step away from a task
 ---
 
 # End Session Workflow
 
-Use this skill when wrapping up a coding session. It ensures learnings are documented and next work is clear.
+**Flexible.** Step 3 always applies; steps 1 and 2 are conditional — skip them if the session didn't produce anything worth capturing, or if the target file doesn't exist and creating one isn't warranted. Don't manufacture content to fill a section — say "nothing to add" and move on.
 
-Steps 1 and 2 are conditional: skip them if the session didn't produce anything worth capturing, or if the target file doesn't exist and creating one isn't warranted. Don't manufacture content to fill a section — say "nothing to add" and move on. Step 3 always applies.
+## When to use
+
+- Wrapping up a coding session.
+- About to step away from a task for a day or longer.
+- After finishing a feature, fix, or investigation worth documenting.
 
 ## Step 1: Update CLAUDE.md with Session Learnings
 

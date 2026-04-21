@@ -1,9 +1,11 @@
 ---
 name: structured-debugging
-description: Use when facing a bug, test failure, or unexpected behavior - walk through reproduce, isolate, hypothesize, test, fix in order, producing a concrete artifact at each step before moving on
+description: Use when facing a bug, test failure, or unexpected behavior and you're tempted to guess at a fix
 ---
 
 # Structured Debugging
+
+**Rigid.** Do the steps in order; do not skip.
 
 Skip steps and you will waste time chasing ghosts. The point of this skill is to produce a concrete artifact at each stage so you always know what's been verified and what's still a guess.
 
