@@ -12,11 +12,11 @@ Use this skill when wrapping up a coding session. It ensures learnings are docum
 Review what changed in the codebase during this session and add any new architectural insights, gotchas, or patterns to CLAUDE.md.
 
 **What to capture:**
-- New subsystems added (e.g., ground digging, particle effects)
+- New subsystems or modules added
 - Changed behavior in existing systems
-- Gotchas discovered (e.g., coordinate system quirks, performance issues)
+- Gotchas discovered (non-obvious constraints, performance traps, ordering requirements)
 - New helper functions or patterns that future work should know about
-- Configuration files introduced (e.g., `mobs-config.json`)
+- Configuration files or schemas introduced
 
 **Examples to look for:**
 - Code that surprised you or was trickier than expected
@@ -27,14 +27,14 @@ Review what changed in the codebase during this session and add any new architec
 
 ## Step 2: Update README.md with Relevant Documentation
 
-Add or update player-facing or contributor-facing documentation in README.md.
+Add or update user-facing or contributor-facing documentation in README.md.
 
 **What to capture:**
-- New player-visible features (controls, mechanics, items)
-- How to run the game
+- New user-visible features
+- How to run or use the project
 - Build/development instructions (if changed)
 - Feature overview
-- Any known limitations or TODOs visible to players
+- Known limitations or TODOs visible to users
 
 ## Step 3: Propose Logical TODOs
 
@@ -53,8 +53,8 @@ Format as:
 
 **Example:**
 ```
-- [ ] Add sound effects for digging (would make mining feel less silent)
-- [ ] Refactor mob spawning to use wave system (current random spawn feels chaotic)
-- [ ] Optimize ground rendering for depths >50 (currently renders all 50 layers every frame)
+- [ ] Add retry logic to the upload client (currently fails silently on transient errors)
+- [ ] Extract shared validation into a helper (duplicated across three handlers)
+- [ ] Add index on the events table's created_at column (queries slow past ~100k rows)
 ```
 
