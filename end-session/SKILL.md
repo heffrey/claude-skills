@@ -5,7 +5,7 @@ description: Use when wrapping up a coding session, closing out work, or about t
 
 # End Session Workflow
 
-**Flexible.** Step 3 always applies; steps 1 and 2 are conditional — skip them if the session didn't produce anything worth capturing, or if the target file doesn't exist and creating one isn't warranted. Don't manufacture content to fill a section — say "nothing to add" and move on.
+**Flexible.** Step 3 always applies; steps 1, 2, and 4 are conditional — skip them if the session didn't produce anything worth capturing, or if the target file doesn't exist and creating one isn't warranted. Don't manufacture content to fill a section — say "nothing to add" and move on.
 
 ## When to use
 
@@ -63,4 +63,12 @@ Format as:
 - [ ] Extract shared validation into a helper (duplicated across three handlers)
 - [ ] Add index on the events table's created_at column (queries slow past ~100k rows)
 ```
+
+## Step 4: Propose Commit and Push
+
+If uncommitted changes exist, offer to commit them with a summary message and push. This step is conditional — skip it if there's nothing to commit, if the user manages commits themselves, or if the changes aren't ready to ship.
+
+Ask: "There are uncommitted changes — want me to commit and push?"
+
+Don't commit silently. Always confirm before acting.
 

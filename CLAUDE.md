@@ -30,9 +30,11 @@ description: When Claude should invoke this skill
 
 The `description` is the trigger — Claude sees it (not the body) when deciding whether a skill applies. Write it in terms of *when* a user or situation calls for the skill, with concrete trigger phrases. "Use when X happens" beats "A skill for X."
 
+Don't tack on a workflow summary after the trigger. A description like "Use when X — walk through A, B, C" gives Claude a shortcut it will follow instead of reading the skill body; keep the description to triggering conditions only.
+
 ## Conventions
 
-- **Rigid vs. flexible.** State explicitly whether the skill is a strict checklist ("do not skip steps") or a loose set of principles. Ambiguity here causes misuse.
+- **Rigid vs. flexible.** State explicitly whether the skill is a strict checklist ("do not skip steps") or a loose set of principles. Mark it with `**Rigid.**` or `**Flexible.**` on its own line at the top of the body, followed by a short clause explaining what that means for this skill. Ambiguity here causes misuse.
 - **Keep skills short.** If a skill is longer than ~200 lines, it's probably two skills.
 - **One skill per directory.** Don't add supporting files, examples, or references next to `SKILL.md` unless a skill genuinely needs them.
 - **No external dependencies.** Skills should work out of the box — no scripts to run, no extra installs.
