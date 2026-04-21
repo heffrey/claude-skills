@@ -36,6 +36,7 @@ The `description` is the trigger — Claude sees it (not the body) when deciding
 - **Keep skills short.** If a skill is longer than ~200 lines, it's probably two skills.
 - **One skill per directory.** Don't add supporting files, examples, or references next to `SKILL.md` unless a skill genuinely needs them.
 - **No external dependencies.** Skills should work out of the box — no scripts to run, no extra installs.
+- **Generic examples only.** Skills live in a shared public collection — don't leave behind examples from whatever project the skill was born in (game mechanics, specific filenames, domain jargon). Use examples that could plausibly apply to any codebase.
 
 ## Adding a skill
 
