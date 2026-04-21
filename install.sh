@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 # Install every skill in this repo into ~/.claude/skills as a symlink.
 # Safe to re-run: existing symlinks are refreshed.
-# If a target exists as a real file or directory, it's moved aside with .bak.<timestamp>.
+# If a target exists as a real file or directory, it's moved to a sibling
+# backups directory so Claude Code doesn't pick it up as a duplicate skill.
 
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TARGET_DIR="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
+BACKUP_DIR="${TARGET_DIR%/}.backups"
 
 mkdir -p "$TARGET_DIR"
 
@@ -20,7 +22,8 @@ for dir in "$REPO_DIR"/*/; do
   if [[ -L "$link" ]]; then
     rm "$link"
   elif [[ -e "$link" ]]; then
-    backup="${link}.bak.$(date +%s)"
+    mkdir -p "$BACKUP_DIR"
+    backup="$BACKUP_DIR/${skill}.$(date +%s)"
     echo "backing up existing $link -> $backup"
     mv "$link" "$backup"
   fi
