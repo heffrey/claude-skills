@@ -31,7 +31,7 @@ Flag every hit. Each one needs a specific justification to survive.
 
 **Copula avoidance.** The word is `is`. Restore it when these are standing in: serves as, stands as, marks, functions as, operates as, represents, boasts, features, maintains, offers.
 
-**Vague attribution.** Name the source or delete the claim: experts argue, observers have cited, industry reports, researchers say, some critics, several publications, studies show. Also check for inflated counts — "multiple reviewers" for one review.
+**Vague attribution.** Name the source or delete the claim: experts argue, observers have cited, industry reports, researchers say, some critics, several publications, studies show. The tell is the bare plural noun, so it survives any verb — "studies put it at", "researchers who study X find", "data suggests", "reports indicate" are the same move. Also check for inflated counts ("multiple reviewers" for one review) and for statistics with a number but no source.
 
 ## Pass 2 — Sentence shapes
 
