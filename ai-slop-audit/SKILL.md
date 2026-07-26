@@ -36,8 +36,9 @@ Flag every hit. Each one needs a specific justification to survive.
 ## Pass 2 — Sentence shapes
 
 - **Participle tails.** A clause bolted on with `-ing` that asserts significance without evidence: "...*, highlighting its importance*", "*, ensuring a seamless experience*", "*, fostering community*". Cut the tail. If the claim matters, make it its own sentence with a fact in it.
-- **Negative parallelism.** "Not only X but also Y", "It's not X, it's Y", "X rather than Y". One may be deliberate emphasis. Two in a document is a tic. Rewrite as a plain assertion.
-- **Rule of three.** Triplets of adjectives or examples used to fake completeness. Cut to the one that carries weight, or expand to a real, unequal list.
+- **Negative parallelism.** "Not only X but also Y", "It's not X, it's Y", "X rather than Y". Do not count them — apply the load-bearing test below.
+- **Rule of three.** Triplets of adjectives or examples. Do not count them either.
+- **The load-bearing test** (for both of the above). Frequency tells you nothing; these constructions appear at identical rates in great prose and in slop. Ask instead whether each element carries content the others don't. "of the people, by the people, for the people" survives, because the three prepositions make three distinct claims about power. "self-awareness, resilience, and personal growth" does not, because it is one idea wearing three hats. "The world will little note, nor long remember what we say here, but it can never forget what they did here" survives, because the contrast is the argument. "It's not just about tracking moods — it's about fostering genuine transformation" does not, because the second half names nothing. Cut the padding; leave the rhetoric alone.
 - **Elegant variation.** Cycling synonyms for one thing across a paragraph to avoid repeating a word. Repeat the word. Repetition reads as confidence.
 - **Uniform rhythm.** Slop is wall-to-wall medium sentences. Read the paragraph aloud. If every sentence is 15–25 words, break some to four and let one run long.
 
@@ -57,7 +58,7 @@ Flag every hit. Each one needs a specific justification to survive.
 - Lists where the items are not actually parallel or not actually separable.
 - Small tables holding two or three facts that belong in a sentence.
 - Emoji used as section decoration.
-- Em dashes at a rate above roughly one per few paragraphs, or standing in where a comma, colon, or parenthesis is the ordinary choice.
+- Em dashes standing in where a comma, colon, or parenthesis is the ordinary choice. Judge the substitution, never the rate: the Gettysburg Address runs 2.5 em dashes per 100 words, roughly three times the density of typical generated marketing prose. Any frequency threshold you set will fire on the better writer.
 - Curly quotes and apostrophes in a plaintext destination that uses straight ones elsewhere.
 - Horizontal rules before every heading; heading levels that skip a step.
 - Markdown syntax pasted where markdown does not render.
@@ -66,9 +67,45 @@ Flag every hit. Each one needs a specific justification to survive.
 
 Delete on sight, in any draft meant for someone other than the requester: "Certainly!", "Of course!", "You're absolutely right!", "I hope this helps", "Let me know if...", "Would you like me to...", "Here's a more detailed breakdown", "Is there anything else". Also: unfilled placeholders and brackets, model artifacts (`contentReference`, `oaicite`, `[cite: 1]`), and knowledge-cutoff disclaimers.
 
+## German (DE)
+
+The passes above are English-specific. For German prose, substitute this vocabulary. Source: [Wikipedia:Anzeichen für KI-generierte Inhalte](https://de.wikipedia.org/wiki/Wikipedia:Anzeichen_für_KI-generierte_Inhalte).
+
+**Werbesprache:** reiches kulturelles Erbe, reiche Geschichte, atemberaubend, beeindruckende natürliche Schönheit, bleibendes Vermächtnis, eingebettet, im Herzen von
+
+**Hochfrequente KI-Wörter:** essenziell, vielfältig, facettenreich, nahtlos, maßgeschneidert, maßgeblich, wegweisend, ganzheitlich, im digitalen Zeitalter, in der heutigen Welt
+
+**Bedeutungsbetonung:** dient als Zeugnis, spielt eine wichtige Rolle, unterstreicht seine Bedeutung, Wendepunkt, Schlüsselmoment, tief verwurzelt, unerschütterliche Hingabe
+
+**Füllkonjunktionen (the strongest single tell):** darüber hinaus, zusätzlich, außerdem, ferner, zudem, andererseits
+
+**Redaktionelle Einschübe:** es ist wichtig zu beachten/bemerken/bedenken, es ist bemerkenswert, keine Diskussion wäre vollständig ohne
+
+**Schlussformeln:** zusammenfassend, abschließend, insgesamt, and a section headed **Fazit**. Also "Trotz seiner Erfolge…", "steht vor mehreren Herausforderungen", Vermächtnis, Zukunftsaussichten.
+
+**Negative Parallelismen:** "nicht nur …, sondern auch", "es geht nicht nur um …, sondern"
+
+**Trikolon:** "sowohl … als auch … und"
+
+**Partizip-Anhängsel:** gewährleistend, hervorhebend, betonend, widerspiegelnd
+
+**Vage Autoritäten:** Branchenberichte, Beobachter haben zitiert, einige Kritiker argumentieren, Studien zeigen
+
+**Chat-Reste:** "Ich hoffe, das hilft", "Natürlich!", "Sicherlich!", "Möchten Sie …", "lassen Sie mich wissen", "hier ist ein", "Ich hoffe, diese Nachricht erreicht Sie wohlauf", "Stand meines letzten Wissensupdates"
+
+Three German-specific mechanics with no English equivalent:
+
+- **The dash is different.** German typography uses the Halbgeviertstrich `–` with spaces around it. An em dash `—` in German prose is an English import, so it is a tell in its own right rather than merely a frequency question.
+- **The quotes are different.** German uses `„…"`. English-style `"…"` or straight quotes inside German prose is the tell — the inverse of the English rule, where curly quotes are the suspect ones.
+- **Nominalstil.** LLM German inflates verbs into noun phrases: "die Durchführung der Überprüfung" for "überprüfen", "zur Verbesserung der Verständlichkeit" for "damit man es versteht". Convert back to verbs. (Not in the source list, but it is the most reliable German tell in practice.)
+
+Also confirm the register matches the target text — `du` and `Sie` are not interchangeable, and LLM German defaults to `Sie`.
+
+When a document exists in both languages, audit and fix them in the same pass. Correcting only one silently forks the two versions.
+
 ## Fixing
 
-Ranked by how much each one buys:
+Most effective first:
 
 1. **Cut.** Most flagged sentences carry no information. Deleting is the fix; rewording preserves the emptiness in fresh words.
 2. **Replace abstraction with fact.** "boasts a vibrant community" becomes the number, the name, or the thing someone did.
@@ -79,6 +116,8 @@ Ranked by how much each one buys:
 ## Do not overcorrect
 
 These are signs, not proof. The target is prose that sounds like a person wrote it, which is a different thing from prose that has been scrubbed clean.
+
+**Not every pass carries equal weight.** Run against the Gettysburg Address as a control, the vocabulary, structure, and copula-avoidance passes score it at zero while synthetic slop scores 16, 6, and 4 — clean separation. The em dash, rule-of-three, and negative-parallelism checks score the two texts identically. Rest the verdict on the first group. Treat the second group as something to examine, never as evidence.
 
 - **Never claim text is AI-generated.** Correct the pattern; don't diagnose the author. Detection tools have high error rates, and humans distinguish AI text at roughly chance.
 - **A single em dash or curly quote means nothing.** Word, macOS, and standard typography all produce them. These count only alongside other signs.
