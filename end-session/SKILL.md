@@ -31,6 +31,8 @@ Review what changed in the codebase during this session and add any new architec
 - Edge cases that came up
 - Data structures that need explanation
 
+**What NOT to capture:** anything whose only relevance was mid-session debugging — a suspected bug that turned out to be a false alarm, a stale log line, a confusing tool artifact you had to reason through. If the resolution was "this was never actually broken" rather than a code or config change, it isn't a gotcha future work needs to know about. Test: does this describe something that currently exists in the codebase/config, or does it describe a dead end you personally went down this session? Only the former belongs in CLAUDE.md.
+
 ## Step 2: Update README.md with Relevant Documentation
 
 Add or update user-facing or contributor-facing documentation in README.md.
