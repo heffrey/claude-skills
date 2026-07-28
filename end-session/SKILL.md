@@ -54,7 +54,7 @@ Add or update user-facing or contributor-facing documentation in README.md.
 
 ## Step 3: Propose Logical TODOs
 
-Based on the session's work and what you learned:
+Based on the session's work and what you learned, consider:
 
 1. **Incomplete work** — features started but not finished
 2. **Discovered issues** — bugs found but not fixed, or architectural problems identified
@@ -62,16 +62,17 @@ Based on the session's work and what you learned:
 4. **Technical debt** — refactorings that would make future work easier
 5. **Performance** — optimizations that should be considered
 
-Format as:
+Then cut hard. Only surface an item if it's something the user would actually act on — a real blocker, a genuine next step, a fix with real impact. Drop anything cosmetic, already-accepted-as-deferred, or "nice to have someday." A short list of items worth doing beats a long list padded with filler; when in doubt, leave it out.
+
+Format as plain dashes, not checkboxes — this list is read on the command line, not rendered:
 ```
-- [ ] Brief description (context about why it matters)
+- Brief description (context about why it matters)
 ```
 
 **Example:**
 ```
-- [ ] Add retry logic to the upload client (currently fails silently on transient errors)
-- [ ] Extract shared validation into a helper (duplicated across three handlers)
-- [ ] Add index on the events table's created_at column (queries slow past ~100k rows)
+- Add retry logic to the upload client (currently fails silently on transient errors)
+- Extract shared validation into a helper (duplicated across three handlers)
 ```
 
 ## Step 4: Propose Commit and Push
