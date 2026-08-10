@@ -50,7 +50,19 @@ Flag every hit. Each one needs a specific justification to survive.
 - **Notability recitation.** Mechanically listing outlets, awards, or credentials to establish credibility. Keep the one that matters to this reader.
 - **Hedged non-claims.** "Efforts are ongoing to...", "continues to evolve", "remains an important consideration". Say what happened or say nothing.
 
-## Pass 4 — Formatting
+## Pass 4 — Terse slop
+
+Passes 1–3 are tuned for ornate slop: the Wikipedia-and-marketing register that pads. A house voice built on short sentences, no throat-clearing, and lead-with-the-point produces a different slop that scores zero on all three. It is plain-worded, confident, correctly rhythmic, and still empty. Check for it separately.
+
+- **The clipped pronouncement.** A standalone short sentence that asserts significance and names nothing: "The order is the whole point." "That's the whole game." "That distinction matters." "And that's the difference." Same defect as significance inflation in Pass 3, but the ornate version announces itself with "stands as a testament to" while this one hides inside the target rhythm. Test: delete the sentence. If the paragraph loses no information, it was throat-clearing for the real line right after it. Cut it and let that line open.
+- **Admission that admits nothing.** "It took me longer than I'd like to admit." "I'll be the first to admit." "Embarrassingly, I…" "If I'm being honest." These perform candor while withholding the fact that would make it candid. Supply the number, the year, the specific thing that broke — or cut. "It took four years and three dead projects" is a confession; "longer than I'd like to admit" is a pose.
+- **The borrowed antithesis.** "Interviews tell you what people say they want; usage tells you what they do." "Culture eats strategy for breakfast." Stock comparisons from a field's canon, recited rather than reported. Two symptoms: the pairing predates the author, and the losing half is something the author never did. A writer who never ran a customer interview cannot have found their own method better than one. Replace with what they actually did.
+- **The absent comparator.** Any "beats", "better than", "instead of" where the loser is generic and unnamed — "a stack of customer interviews", "most frameworks", "the traditional approach". Real comparisons name a specific alternative the writer weighed and rejected.
+- **Aphorism stacking.** Epigram-shaped closers on every section, or two in a row. One earned line lands; four reads as generated cadence. Keep the best, cut the others.
+
+Terse slop is hard to catch because each sentence sounds like good writing. Judge content, not sound: what does the reader know after this sentence that they didn't know before it?
+
+## Pass 5 — Formatting
 
 - Title Case In Headings when the surrounding style is sentence case.
 - Bold applied to every keyword rather than to the one thing that matters.
@@ -63,7 +75,7 @@ Flag every hit. Each one needs a specific justification to survive.
 - Horizontal rules before every heading; heading levels that skip a step.
 - Markdown syntax pasted where markdown does not render.
 
-## Pass 5 — Chat residue
+## Pass 6 — Chat residue
 
 Delete on sight, in any draft meant for someone other than the requester: "Certainly!", "Of course!", "You're absolutely right!", "I hope this helps", "Let me know if...", "Would you like me to...", "Here's a more detailed breakdown", "Is there anything else". Also: unfilled placeholders and brackets, model artifacts (`contentReference`, `oaicite`, `[cite: 1]`), and knowledge-cutoff disclaimers.
 
@@ -124,6 +136,7 @@ These are signs, not proof. The target is prose that sounds like a person wrote 
 - **The user's voice is not a defect.** When editing something the user wrote, correct the tells and leave their phrasing, rhythm, and jokes intact. The edit should read like them on a good day, not like a house style.
 - **Some flagged words are the right word.** "Robust" is correct about a system that tolerates failure. Justify and keep it.
 - **Don't strip contrast to obey the rules.** Removing every "not X but Y" mechanically produces its own kind of flat, hedge-free mush.
+- **A short declarative sentence is not a Pass 4 hit.** Terse voices are terse on purpose, and great terse prose is full of standalone lines — "Now we are engaged in a great civil war." The hit requires emptiness, not brevity: the sentence asserts that something is significant without saying what it is. Run the delete test before cutting anything, and if the paragraph gets worse, put it back.
 
 ## Output
 
