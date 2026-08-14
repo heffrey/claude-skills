@@ -29,6 +29,7 @@ If a target already exists as a real file or directory (not a symlink), the inst
 | [`ai-slop-audit`](ai-slop-audit/SKILL.md) | Catch and fix the tells that make prose read as AI-written, before it ships. |
 | [`end-session`](end-session/SKILL.md) | Wrap up a session: update docs, capture learnings, propose next work. |
 | [`rubber-duck`](rubber-duck/SKILL.md) | Force a written explanation of the problem before proposing any fix. |
+| [`status-report`](status-report/SKILL.md) | Report where every task in the session stands, as progress bars, and what comes next. |
 | [`structured-debugging`](structured-debugging/SKILL.md) | Walk reproduce → isolate → hypothesize → test → fix in order, with an artifact at each step. |
 
 ## Writing your own
